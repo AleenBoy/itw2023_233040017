@@ -1,0 +1,64 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    align-items: center;
+    background-color: #4f4e4e;
+    max-width: 1600px;
+    
+}
+
+.navbar ul{
+    display: flex;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    padding: 5px;
+}
+
+.nav-item{
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    background-color: rgb(47, 47, 47);
+    color: rgb(255, 98, 0);
+}
+
+H1{
+    color: rgb(247, 83, 83);
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+    flex-direction: column;
+    background-color:  rgb(72, 72, 247);
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+}
+
+
+/* Ukuran Mobile */
+
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }

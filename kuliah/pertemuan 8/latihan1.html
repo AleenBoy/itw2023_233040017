@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        .container {
+            width: 600px;
+            height: 600px;
+            margin: 100px;
+            border: 10px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(152, 255, 159);
+        
+            
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" data-aos="zoom-in"></div>
+        <div class="box" data-aos="zoom-in" data-aos-delay="300"></div>
+        <div class="box" data-aos="zoom-in" data-aos-delay="450"></div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
